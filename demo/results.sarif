@@ -1,0 +1,3400 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "pqc-migration",
+          "version": "1.0.0",
+          "rules": [
+            {
+              "id": "RSA",
+              "name": "RSA",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: RSA"
+              },
+              "fullDescription": {
+                "text": "Replace RSA with ML-KEM-768 / ML-DSA-65."
+              },
+              "help": {
+                "text": "Category: key-exchange/signature"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "MD5",
+              "name": "MD5",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: MD5"
+              },
+              "fullDescription": {
+                "text": "Replace MD5 with SHA-3-256."
+              },
+              "help": {
+                "text": "Category: hash"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "SHA-1",
+              "name": "SHA-1",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: SHA-1"
+              },
+              "fullDescription": {
+                "text": "Replace SHA-1 with SHA-3-256."
+              },
+              "help": {
+                "text": "Category: hash"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "ECDSA",
+              "name": "ECDSA",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: ECDSA"
+              },
+              "fullDescription": {
+                "text": "Replace ECDSA with ML-DSA-65 (FIPS 204)."
+              },
+              "help": {
+                "text": "Category: signature"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "3DES/DES",
+              "name": "3DES/DES",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: 3DES/DES"
+              },
+              "fullDescription": {
+                "text": "Replace 3DES/DES with AES-256-GCM."
+              },
+              "help": {
+                "text": "Category: cipher"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "RC4",
+              "name": "RC4",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: RC4"
+              },
+              "fullDescription": {
+                "text": "Replace RC4 with AES-256-GCM."
+              },
+              "help": {
+                "text": "Category: cipher"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "DSA",
+              "name": "DSA",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: DSA"
+              },
+              "fullDescription": {
+                "text": "Replace DSA with ML-DSA-65."
+              },
+              "help": {
+                "text": "Category: signature"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "JCA-composite",
+              "name": "JCA-composite",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: JCA-composite"
+              },
+              "fullDescription": {
+                "text": "Replace JCA-composite with ML-DSA-65."
+              },
+              "help": {
+                "text": "Category: signature"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "ECDH",
+              "name": "ECDH",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: ECDH"
+              },
+              "fullDescription": {
+                "text": "Replace ECDH with ML-KEM-768 (FIPS 203)."
+              },
+              "help": {
+                "text": "Category: key-exchange"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "X25519/X448",
+              "name": "X25519/X448",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: X25519/X448"
+              },
+              "fullDescription": {
+                "text": "Replace X25519/X448 with ML-KEM-768."
+              },
+              "help": {
+                "text": "Category: key-exchange"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "EdDSA",
+              "name": "EdDSA",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: EdDSA"
+              },
+              "fullDescription": {
+                "text": "Replace EdDSA with ML-DSA-65."
+              },
+              "help": {
+                "text": "Category: signature"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "DH",
+              "name": "DH",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: DH"
+              },
+              "fullDescription": {
+                "text": "Replace DH with ML-KEM-768."
+              },
+              "help": {
+                "text": "Category: key-exchange"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            },
+            {
+              "id": "Blowfish",
+              "name": "Blowfish",
+              "shortDescription": {
+                "text": "Vulnerable algorithm: Blowfish"
+              },
+              "fullDescription": {
+                "text": "Replace Blowfish with AES-256-GCM."
+              },
+              "help": {
+                "text": "Category: cipher"
+              },
+              "properties": {
+                "tags": [
+                  "cryptography",
+                  "pqc"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_cbom.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_cbom.py"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_cbom.py"
+                },
+                "region": {
+                  "startLine": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_cbom.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_cbom.py"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_cbom.py"
+                },
+                "region": {
+                  "startLine": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_inventory.py"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_inventory.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_inventory.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_inventory.py"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_inventory.py"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_inventory.py"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_verify.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_verify.py"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_verify.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_baseline.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_score.py"
+                },
+                "region": {
+                  "startLine": 21
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_remediation.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_remediation.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_remediation.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "JCA-composite",
+          "level": "error",
+          "message": {
+            "text": "JCA-composite -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_remediation.py"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_policies.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_policies.py"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_policies.py"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_policies.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_policies.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_compliance.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_compliance.py"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_sarif.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_sarif.py"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_sarif.py"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_sarif.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./tests/test_sarif.py"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./policies/ci-crypto.yaml"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./policies/ci-crypto.yaml"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./policies/strict.yaml"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./policies/strict.yaml"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./policies/strict.yaml"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./policies/strict.yaml"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDH",
+          "level": "error",
+          "message": {
+            "text": "ECDH -> ML-KEM-768 (FIPS 203)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDH",
+          "level": "error",
+          "message": {
+            "text": "ECDH -> ML-KEM-768 (FIPS 203)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDH",
+          "level": "error",
+          "message": {
+            "text": "ECDH -> ML-KEM-768 (FIPS 203)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "X25519/X448",
+          "level": "warning",
+          "message": {
+            "text": "X25519/X448 -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "X25519/X448",
+          "level": "warning",
+          "message": {
+            "text": "X25519/X448 -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "X25519/X448",
+          "level": "warning",
+          "message": {
+            "text": "X25519/X448 -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EdDSA",
+          "level": "warning",
+          "message": {
+            "text": "EdDSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 9
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EdDSA",
+          "level": "warning",
+          "message": {
+            "text": "EdDSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EdDSA",
+          "level": "warning",
+          "message": {
+            "text": "EdDSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DH",
+          "level": "error",
+          "message": {
+            "text": "DH -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DH",
+          "level": "error",
+          "message": {
+            "text": "DH -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DH",
+          "level": "error",
+          "message": {
+            "text": "DH -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 26
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 26
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 9
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 21
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 26
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 26
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Blowfish",
+          "level": "error",
+          "message": {
+            "text": "Blowfish -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Blowfish",
+          "level": "error",
+          "message": {
+            "text": "Blowfish -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Blowfish",
+          "level": "error",
+          "message": {
+            "text": "Blowfish -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/cbom.py"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDH",
+          "level": "error",
+          "message": {
+            "text": "ECDH -> ML-KEM-768 (FIPS 203)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "X25519/X448",
+          "level": "warning",
+          "message": {
+            "text": "X25519/X448 -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EdDSA",
+          "level": "warning",
+          "message": {
+            "text": "EdDSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DH",
+          "level": "error",
+          "message": {
+            "text": "DH -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 23
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DH",
+          "level": "error",
+          "message": {
+            "text": "DH -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 39
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 43
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 9
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 32
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 33
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 35
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 37
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 60
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 61
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 47
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 49
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 51
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Blowfish",
+          "level": "error",
+          "message": {
+            "text": "Blowfish -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 55
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "JCA-composite",
+          "level": "error",
+          "message": {
+            "text": "JCA-composite -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/compliance.py"
+                },
+                "region": {
+                  "startLine": 60
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDH",
+          "level": "error",
+          "message": {
+            "text": "ECDH -> ML-KEM-768 (FIPS 203)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDH",
+          "level": "error",
+          "message": {
+            "text": "ECDH -> ML-KEM-768 (FIPS 203)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 21
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "X25519/X448",
+          "level": "warning",
+          "message": {
+            "text": "X25519/X448 -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "X25519/X448",
+          "level": "warning",
+          "message": {
+            "text": "X25519/X448 -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 23
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EdDSA",
+          "level": "warning",
+          "message": {
+            "text": "EdDSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EdDSA",
+          "level": "warning",
+          "message": {
+            "text": "EdDSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EdDSA",
+          "level": "warning",
+          "message": {
+            "text": "EdDSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DH",
+          "level": "error",
+          "message": {
+            "text": "DH -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 26
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DH",
+          "level": "error",
+          "message": {
+            "text": "DH -> ML-KEM-768"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 28
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 29
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 30
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 41
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 32
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 33
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 43
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 34
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 35
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 36
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RC4",
+          "level": "error",
+          "message": {
+            "text": "RC4 -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 37
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Blowfish",
+          "level": "error",
+          "message": {
+            "text": "Blowfish -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 38
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Blowfish",
+          "level": "error",
+          "message": {
+            "text": "Blowfish -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/rules.py"
+                },
+                "region": {
+                  "startLine": 39
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RSA",
+          "level": "error",
+          "message": {
+            "text": "RSA -> ML-KEM-768 / ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDSA",
+          "level": "error",
+          "message": {
+            "text": "ECDSA -> ML-DSA-65 (FIPS 204)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ECDH",
+          "level": "error",
+          "message": {
+            "text": "ECDH -> ML-KEM-768 (FIPS 203)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SHA-1",
+          "level": "warning",
+          "message": {
+            "text": "SHA-1 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 9
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "MD5",
+          "level": "error",
+          "message": {
+            "text": "MD5 -> SHA-3-256"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DSA",
+          "level": "error",
+          "message": {
+            "text": "DSA -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3DES/DES",
+          "level": "error",
+          "message": {
+            "text": "3DES/DES -> AES-256-GCM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "JCA-composite",
+          "level": "error",
+          "message": {
+            "text": "JCA-composite -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "JCA-composite",
+          "level": "error",
+          "message": {
+            "text": "JCA-composite -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "JCA-composite",
+          "level": "error",
+          "message": {
+            "text": "JCA-composite -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "JCA-composite",
+          "level": "error",
+          "message": {
+            "text": "JCA-composite -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "JCA-composite",
+          "level": "error",
+          "message": {
+            "text": "JCA-composite -> ML-DSA-65"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "./pqc/remediation.py"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

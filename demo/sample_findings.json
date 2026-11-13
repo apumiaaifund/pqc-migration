@@ -1,0 +1,1655 @@
+{
+  "findings": [
+    {
+      "source": "./tests/test_cbom.py",
+      "line": 6,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": " to_cbom(scan_text(\"rsa.generate() md5(x)\","
+    },
+    {
+      "source": "./tests/test_cbom.py",
+      "line": 12,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": " to_cbom(scan_text(\"rsa.generate() md5(x)\","
+    },
+    {
+      "source": "./tests/test_cbom.py",
+      "line": 14,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "nts\"]}     assert {\"RSA\", \"MD5\"} <= names  "
+    },
+    {
+      "source": "./tests/test_cbom.py",
+      "line": 6,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "ext(\"rsa.generate() md5(x)\", \"x.py\"))     a"
+    },
+    {
+      "source": "./tests/test_cbom.py",
+      "line": 12,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "ext(\"rsa.generate() md5(x)\", \"x.py\"))     n"
+    },
+    {
+      "source": "./tests/test_cbom.py",
+      "line": 14,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "    assert {\"RSA\", \"MD5\"} <= names   def te"
+    },
+    {
+      "source": "./tests/test_inventory.py",
+      "line": 5,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": " = scan_text(\"key = rsa.generate(2048)\", \"x"
+    },
+    {
+      "source": "./tests/test_inventory.py",
+      "line": 6,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "(x[\"algorithm\"] == \"RSA\" for x in f)   def "
+    },
+    {
+      "source": "./tests/test_inventory.py",
+      "line": 19,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "assert scan_text(\"# RSA for legacy\\nx = 1\", "
+    },
+    {
+      "source": "./tests/test_inventory.py",
+      "line": 10,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "(x[\"algorithm\"] == \"SHA-1\"                for"
+    },
+    {
+      "source": "./tests/test_inventory.py",
+      "line": 11,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "n_text(\"h = hashlib.sha1(d)\", \"x.py\"))   def"
+    },
+    {
+      "source": "./tests/test_inventory.py",
+      "line": 15,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "(x[\"algorithm\"] == \"MD5\" for x in scan_text"
+    },
+    {
+      "source": "./tests/test_verify.py",
+      "line": 6,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "   pre = scan_text(\"rsa.generate() md5(x)\","
+    },
+    {
+      "source": "./tests/test_verify.py",
+      "line": 13,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "  same = scan_text(\"rsa.generate()\", \"x.py\""
+    },
+    {
+      "source": "./tests/test_verify.py",
+      "line": 6,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "ext(\"rsa.generate() md5(x)\", \"x.py\")     po"
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 7,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "ndings = scan_text(\"rsa.generate() md5(x)\","
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 16,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "     f = scan_text(\"rsa.generate() md5(x)\","
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 18,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "lter_new(scan_text(\"rsa.generate() md5(x)\","
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 24,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "ne(path, scan_text(\"rsa.generate()\", \"x.py\""
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 25,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "lter_new(scan_text(\"rsa.generate()\\nmd5(x)\""
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 7,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "ext(\"rsa.generate() md5(x)\", \"x.py\")     da"
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 16,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "ext(\"rsa.generate() md5(x)\", \"x.py\")     sa"
+    },
+    {
+      "source": "./tests/test_baseline.py",
+      "line": 18,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "ext(\"rsa.generate() md5(x)\", \"x.py\"), load_"
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 14,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": " hashlib     key1 = rsa.generate(2048)     "
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 15,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "te(2048)     key2 = rsa.generate(4096)     "
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 16,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "te(4096)     sig1 = ecdsa.sign(data, key1)   "
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 17,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "a, key1)     sig2 = ecdsa.sign(data, key2)   "
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 19,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "()     h2 = hashlib.sha1(data).hexdigest()  "
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 18,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "2)     h1 = hashlib.md5(data).hexdigest()  "
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 20,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "exdigest()     c1 = DES.new(key1)     c2 = "
+    },
+    {
+      "source": "./tests/test_score.py",
+      "line": 21,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": ".new(key1)     c2 = RC4.new(key2)     \"\"\"  "
+    },
+    {
+      "source": "./tests/test_remediation.py",
+      "line": 6,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "code = \"h = hashlib.md5(data).hexdigest()\\n"
+    },
+    {
+      "source": "./tests/test_remediation.py",
+      "line": 7,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": " x[\"algorithm\"] == \"MD5\")     patch = gener"
+    },
+    {
+      "source": "./tests/test_remediation.py",
+      "line": 18,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "ssert patch and \"ML-DSA-65\" in patch[\"patch"
+    },
+    {
+      "source": "./tests/test_remediation.py",
+      "line": 13,
+      "algorithm": "JCA-composite",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "jca_composite",
+      "snippet": "nature.getInstance(\"SHA256withRSA\")\\n'     f = next(("
+    },
+    {
+      "source": "./tests/test_policies.py",
+      "line": 6,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "evaluate(scan_text(\"rsa.generate()\", \"x.py\""
+    },
+    {
+      "source": "./tests/test_policies.py",
+      "line": 12,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "evaluate(scan_text(\"rsa.generate()\", \"x.py\""
+    },
+    {
+      "source": "./tests/test_policies.py",
+      "line": 13,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": " \"high\", \"allow\": [\"RSA\"]})     assert r[\"p"
+    },
+    {
+      "source": "./tests/test_policies.py",
+      "line": 18,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "evaluate(scan_text(\"sha1(d)\", \"x.py\"),      "
+    },
+    {
+      "source": "./tests/test_policies.py",
+      "line": 19,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": ": \"high\", \"deny\": [\"SHA-1\"]})     assert not "
+    },
+    {
+      "source": "./tests/test_compliance.py",
+      "line": 6,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "findings(scan_text(\"rsa.generate()\", \"x.py\""
+    },
+    {
+      "source": "./tests/test_compliance.py",
+      "line": 11,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "ce_score(scan_text(\"md5(x)\", \"x.py\"))     a"
+    },
+    {
+      "source": "./tests/test_sarif.py",
+      "line": 6,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "to_sarif(scan_text(\"rsa.generate()\", \"x.py\""
+    },
+    {
+      "source": "./tests/test_sarif.py",
+      "line": 11,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "to_sarif(scan_text(\"rsa.generate() sha1(x)\""
+    },
+    {
+      "source": "./tests/test_sarif.py",
+      "line": 13,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "error\" in levels  # RSA = high   def test_s"
+    },
+    {
+      "source": "./tests/test_sarif.py",
+      "line": 17,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "to_sarif(scan_text(\"rsa.generate()\", \"x.py\""
+    },
+    {
+      "source": "./tests/test_sarif.py",
+      "line": 11,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "ext(\"rsa.generate() sha1(x)\", \"x.py\"))     l"
+    },
+    {
+      "source": "./policies/ci-crypto.yaml",
+      "line": 3,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "verity: high deny: [MD5, RC4] allow: [AES-2"
+    },
+    {
+      "source": "./policies/ci-crypto.yaml",
+      "line": 3,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": "y: high deny: [MD5, RC4] allow: [AES-256-GC"
+    },
+    {
+      "source": "./policies/strict.yaml",
+      "line": 3,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "MD5, RC4, 3DES/DES, SHA-1] allow: [] "
+    },
+    {
+      "source": "./policies/strict.yaml",
+      "line": 3,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "rity: medium deny: [MD5, RC4, 3DES/DES, SHA"
+    },
+    {
+      "source": "./policies/strict.yaml",
+      "line": 3,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "um deny: [MD5, RC4, 3DES/DES, SHA-1] allow: "
+    },
+    {
+      "source": "./policies/strict.yaml",
+      "line": 3,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": " medium deny: [MD5, RC4, 3DES/DES, SHA-1] a"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 7,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "_PRIMITIVE = {     \"RSA\": \"pke\", \"ECDSA\": \""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 15,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": ", } _FUNCS = {     \"RSA\": [\"keygen\", \"encry"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 24,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "_CLASSICAL = {     \"RSA\": 112, \"ECDSA\": 128"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 7,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "     \"RSA\": \"pke\", \"ECDSA\": \"signature\", \"ECD"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 16,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "n\", \"verify\"],     \"ECDSA\": [\"sign\", \"verify\""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 24,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": " {     \"RSA\": 112, \"ECDSA\": 128, \"ECDH\": 128,"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 7,
+      "algorithm": "ECDH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768 (FIPS 203)",
+      "severity": "high",
+      "rule": "ecdh",
+      "snippet": "DSA\": \"signature\", \"ECDH\": \"key-agree\",     "
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 16,
+      "algorithm": "ECDH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768 (FIPS 203)",
+      "severity": "high",
+      "rule": "ecdh",
+      "snippet": "\"sign\", \"verify\"], \"ECDH\": [\"keygen\", \"deriv"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 24,
+      "algorithm": "ECDH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768 (FIPS 203)",
+      "severity": "high",
+      "rule": "ecdh",
+      "snippet": "112, \"ECDSA\": 128, \"ECDH\": 128, \"DH\": 112,  "
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 8,
+      "algorithm": "X25519/X448",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "medium",
+      "rule": "x25519",
+      "snippet": "\"DH\": \"key-agree\", \"X25519/X448\": \"key-agree\","
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 20,
+      "algorithm": "X25519/X448",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "medium",
+      "rule": "x25519",
+      "snippet": "\", \"decrypt\"],     \"X25519/X448\": [\"keygen\", \""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 25,
+      "algorithm": "X25519/X448",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "medium",
+      "rule": "x25519",
+      "snippet": "28, \"DH\": 112,     \"X25519/X448\": 128, \"EdDSA\""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 9,
+      "algorithm": "EdDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "medium",
+      "rule": "eddsa",
+      "snippet": ": \"key-agree\",     \"EdDSA\": \"signature\", \"DSA"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 20,
+      "algorithm": "EdDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "medium",
+      "rule": "eddsa",
+      "snippet": "eygen\", \"derive\"], \"EdDSA\": [\"sign\", \"verify\""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 25,
+      "algorithm": "EdDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "medium",
+      "rule": "eddsa",
+      "snippet": "X25519/X448\": 128, \"EdDSA\": 128, \"DSA\": 112, "
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 8,
+      "algorithm": "DH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "high",
+      "rule": "dh",
+      "snippet": ": \"key-agree\",     \"DH\": \"key-agree\", \"X25"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 17,
+      "algorithm": "DH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "high",
+      "rule": "dh",
+      "snippet": "n\", \"derive\"],     \"DH\": [\"keygen\", \"deriv"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 24,
+      "algorithm": "DH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "high",
+      "rule": "dh",
+      "snippet": " 128, \"ECDH\": 128, \"DH\": 112,     \"X25519/"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 10,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": ": \"signature\",     \"SHA-1\": \"hash\", \"MD5\": \"h"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 17,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "\"MD5\": [\"digest\"], \"SHA-1\": [\"digest\"],     \""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 26,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "112,     \"MD5\": 0, \"SHA-1\": 64, \"3DES/DES\": 1"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 10,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "  \"SHA-1\": \"hash\", \"MD5\": \"hash\", \"3DES/DES"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 17,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "eygen\", \"derive\"], \"MD5\": [\"digest\"], \"SHA-"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 26,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "8, \"DSA\": 112,     \"MD5\": 0, \"SHA-1\": 64, \""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 9,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "DSA\": \"signature\", \"DSA\": \"signature\",     "
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 21,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "n\", \"verify\"],     \"DSA\": [\"sign\", \"verify\""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 25,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "128, \"EdDSA\": 128, \"DSA\": 112,     \"MD5\": 0"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 10,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "h\", \"MD5\": \"hash\", \"3DES/DES\": \"block-cipher"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 18,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "\": [\"digest\"],     \"3DES/DES\": [\"encrypt\", \""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 26,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "\": 0, \"SHA-1\": 64, \"3DES/DES\": 112, \"RC4\": 0"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 11,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": "block-cipher\",     \"RC4\": \"stream-cipher\", "
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 18,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": "rypt\", \"decrypt\"], \"RC4\": [\"encrypt\", \"decr"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 26,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": ", \"3DES/DES\": 112, \"RC4\": 0,     \"Blowfish\""
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 11,
+      "algorithm": "Blowfish",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "blowfish",
+      "snippet": ": \"stream-cipher\", \"Blowfish\": \"block-cipher\",  "
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 19,
+      "algorithm": "Blowfish",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "blowfish",
+      "snippet": "\", \"decrypt\"],     \"Blowfish\": [\"encrypt\", \"decr"
+    },
+    {
+      "source": "./pqc/cbom.py",
+      "line": 27,
+      "algorithm": "Blowfish",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "blowfish",
+      "snippet": "112, \"RC4\": 0,     \"Blowfish\": 64, \"JCA-composit"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 6,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "str, Any]] = {     \"RSA\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 7,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "ted\", \"2030-2033\", \"RSA-2048+ legacy only\"),    "
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 13,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "tion\"),     },     \"ECDSA\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 18,
+      "algorithm": "ECDH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768 (FIPS 203)",
+      "severity": "high",
+      "rule": "ecdh",
+      "snippet": "rget\"),     },     \"ECDH\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 27,
+      "algorithm": "X25519/X448",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "medium",
+      "rule": "x25519",
+      "snippet": "-768\"),     },     \"X25519/X448\": {         \"C"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 31,
+      "algorithm": "EdDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "medium",
+      "rule": "eddsa",
+      "snippet": "-KEM\"),     },     \"EdDSA\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 23,
+      "algorithm": "DH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "high",
+      "rule": "dh",
+      "snippet": "ired\"),     },     \"DH\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 24,
+      "algorithm": "DH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "high",
+      "rule": "dh",
+      "snippet": "030\", \"finite-field DH not approved\"),    "
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 39,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "A-65\"),     },     \"SHA-1\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 43,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "oved\"),     },     \"MD5\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 9,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": ", \"2025-08-13\", \"ML-DSA-65\"),         \"EO 1"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 14,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "cated\", \"2030\", \"ML-DSA-65 for new signatur"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 15,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": ", \"2025-08-13\", \"ML-DSA-65\"),         \"EO 1"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 32,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "cated\", \"2030\", \"ML-DSA-65 for new\"),      "
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 33,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": ", \"2025-08-13\", \"ML-DSA-65\"),     },     \"D"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 35,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "A-65\"),     },     \"DSA\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 37,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": ", \"2025-08-13\", \"ML-DSA-65\"),     },     \"S"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 60,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "\"SHA256withRSA → ML-DSA-65\"),         \"FIPS"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 61,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": ", \"2025-08-13\", \"ML-DSA-65\"),     }, }  FRA"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 47,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "oved\"),     },     \"3DES/DES\": {         \"CN"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 49,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "bited\", \"already\", \"3DES deprecated\"),     }"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 51,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": "ated\"),     },     \"RC4\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 55,
+      "algorithm": "Blowfish",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "blowfish",
+      "snippet": "oved\"),     },     \"Blowfish\": {         \"CNSA 2"
+    },
+    {
+      "source": "./pqc/compliance.py",
+      "line": 60,
+      "algorithm": "JCA-composite",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "jca_composite",
+      "snippet": "\"replace\", \"2030\", \"SHA256withRSA → ML-DSA-65\"),     "
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 16,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "Rule] = [     Rule(\"rsa\", re.compile(r\"\\bRS"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 17,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "\", re.I),          \"RSA\", \"key-exchange/sig"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 42,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "           r\"with(?:RSA|ECDSA|DSA|EdDSA)\\b\""
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 18,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": " \"high\"),     Rule(\"ecdsa\", re.compile(r\"\\bEC"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 19,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "\", re.I),          \"ECDSA\", \"signature\", \"ML-"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 42,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "       r\"with(?:RSA|ECDSA|DSA|EdDSA)\\b\", re.I"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 20,
+      "algorithm": "ECDH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768 (FIPS 203)",
+      "severity": "high",
+      "rule": "ecdh",
+      "snippet": " \"high\"),     Rule(\"ecdh\", re.compile(r\"\\bEC"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 21,
+      "algorithm": "ECDH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768 (FIPS 203)",
+      "severity": "high",
+      "rule": "ecdh",
+      "snippet": "\", re.I),          \"ECDH\", \"key-exchange\", \""
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 22,
+      "algorithm": "X25519/X448",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "medium",
+      "rule": "x25519",
+      "snippet": " \"high\"),     Rule(\"x25519\", re.compile(r\"\\b(?"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 23,
+      "algorithm": "X25519/X448",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "medium",
+      "rule": "x25519",
+      "snippet": "\", re.I),          \"X25519/X448\", \"key-exchang"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 24,
+      "algorithm": "EdDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "medium",
+      "rule": "eddsa",
+      "snippet": "medium\"),     Rule(\"eddsa\", re.compile(r\"\\b(?"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 25,
+      "algorithm": "EdDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "medium",
+      "rule": "eddsa",
+      "snippet": "\", re.I),          \"EdDSA\", \"signature\", \"ML-"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 42,
+      "algorithm": "EdDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "medium",
+      "rule": "eddsa",
+      "snippet": "ith(?:RSA|ECDSA|DSA|EdDSA)\\b\", re.I),        "
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 26,
+      "algorithm": "DH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "high",
+      "rule": "dh",
+      "snippet": "medium\"),     Rule(\"dh\", re.compile(r\"\\bDH"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 27,
+      "algorithm": "DH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768",
+      "severity": "high",
+      "rule": "dh",
+      "snippet": "\", re.I),          \"DH\", \"key-exchange\", \""
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 28,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": " \"high\"),     Rule(\"sha1\", re.compile(r\"\\bSH"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 29,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "\", re.I),          \"SHA-1\", \"hash\", \"SHA-3-25"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 30,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "medium\"),     Rule(\"md5\", re.compile(r\"\\bMD"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 31,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "\", re.I),          \"MD5\", \"hash\", \"SHA-3-25"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 41,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "  re.compile(r\"\\b(?:MD5|SHA-?1|SHA-?256|SHA"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 17,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "\", \"ML-KEM-768 / ML-DSA-65\", \"high\"),     R"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 19,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "\", \"signature\", \"ML-DSA-65 (FIPS 204)\", \"hi"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 25,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "\", \"signature\", \"ML-DSA-65\", \"medium\"),    "
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 32,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": " \"high\"),     Rule(\"dsa\", re.compile(r\"\\bDS"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 33,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "\", re.I),          \"DSA\", \"signature\", \"ML-"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 42,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": " r\"with(?:RSA|ECDSA|DSA|EdDSA)\\b\", re.I),  "
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 43,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "\", \"signature\", \"ML-DSA-65\", \"high\"), ]  SK"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 34,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": " \"high\"),     Rule(\"3des\", re.compile(r\"\\b3D"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 35,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "\", re.I),          \"3DES/DES\", \"cipher\", \"AE"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 36,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": " \"high\"),     Rule(\"rc4\", re.compile(r\"\\bRC"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 37,
+      "algorithm": "RC4",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "rc4",
+      "snippet": "\", re.I),          \"RC4\", \"cipher\", \"AES-25"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 38,
+      "algorithm": "Blowfish",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "blowfish",
+      "snippet": " \"high\"),     Rule(\"blowfish\", re.compile(r\"\\bBl"
+    },
+    {
+      "source": "./pqc/rules.py",
+      "line": 39,
+      "algorithm": "Blowfish",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "blowfish",
+      "snippet": "\", re.I),          \"Blowfish\", \"cipher\", \"AES-25"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 11,
+      "algorithm": "RSA",
+      "category": "key-exchange/signature",
+      "replacement": "ML-KEM-768 / ML-DSA-65",
+      "severity": "high",
+      "rule": "rsa",
+      "snippet": "\"ML-DSA-65\"}],     \"RSA\": [{\"find\": \"RSA_20"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 14,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "L-DSA-65\")'}],     \"ECDSA\": [{\"find\": \"ecdsa."
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 15,
+      "algorithm": "ECDSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65 (FIPS 204)",
+      "severity": "high",
+      "rule": "ecdsa",
+      "snippet": "          {\"find\": \"ecdsa.verify(\", \"replace\""
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 16,
+      "algorithm": "ECDH",
+      "category": "key-exchange",
+      "replacement": "ML-KEM-768 (FIPS 203)",
+      "severity": "high",
+      "rule": "ecdh",
+      "snippet": "65.verify(\"}],     \"ECDH\": [{\"find\": \"ecdh.e"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 8,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "\"sha3_256(\"}],     \"SHA-1\": [{\"find\": \"hashli"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 9,
+      "algorithm": "SHA-1",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "medium",
+      "rule": "sha1",
+      "snippet": "          {\"find\": \"sha1(\", \"replace\": \"sha3"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 6,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "tr, str]]] = {     \"MD5\": [{\"find\": \"hashli"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 7,
+      "algorithm": "MD5",
+      "category": "hash",
+      "replacement": "SHA-3-256",
+      "severity": "high",
+      "rule": "md5",
+      "snippet": "          {\"find\": \"md5(\", \"replace\": \"sha3"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 10,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "SA\", \"replace\": \"ML-DSA-65\"}],     \"RSA\": ["
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 13,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "ure.getInstance(\"ML-DSA-65\")'}],     \"ECDSA"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 17,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "SA\", \"replace\": \"ML-DSA-65\"},              "
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 18,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "SA\", \"replace\": \"ML-DSA-65\"},              "
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 19,
+      "algorithm": "DSA",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "dsa",
+      "snippet": "SA\", \"replace\": \"ML-DSA-65\"}],     \"3DES/DE"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 20,
+      "algorithm": "3DES/DES",
+      "category": "cipher",
+      "replacement": "AES-256-GCM",
+      "severity": "high",
+      "rule": "3des",
+      "snippet": "\"ML-DSA-65\"}],     \"3DES/DES\": [{\"find\": \"DE"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 10,
+      "algorithm": "JCA-composite",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "jca_composite",
+      "snippet": "          {\"find\": \"SHA1withRSA\", \"replace\": \"ML-DS"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 12,
+      "algorithm": "JCA-composite",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "jca_composite",
+      "snippet": "nature.getInstance(\"SHA256withRSA\")',              \"r"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 17,
+      "algorithm": "JCA-composite",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "jca_composite",
+      "snippet": "posite\": [{\"find\": \"SHA256withRSA\", \"replace\": \"ML-DS"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 18,
+      "algorithm": "JCA-composite",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "jca_composite",
+      "snippet": "          {\"find\": \"SHA384withRSA\", \"replace\": \"ML-DS"
+    },
+    {
+      "source": "./pqc/remediation.py",
+      "line": 19,
+      "algorithm": "JCA-composite",
+      "category": "signature",
+      "replacement": "ML-DSA-65",
+      "severity": "high",
+      "rule": "jca_composite",
+      "snippet": "          {\"find\": \"SHA256withECDSA\", \"replace\": \"ML-DS"
+    }
+  ],
+  "total": 165
+}

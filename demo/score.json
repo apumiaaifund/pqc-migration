@@ -1,0 +1,11 @@
+{
+  "overall": 20,
+  "grade": "F",
+  "subscores": {
+    "hygiene": 0,
+    "identity": 0,
+    "key_exchange": 0,
+    "data_at_rest": 0,
+    "agility": 100
+  }
+}
