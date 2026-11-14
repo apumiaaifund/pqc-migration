@@ -1,5 +1,8 @@
 # pqc-migration — Public Demo
 
+<p align="center"><img src="assets/logo.svg" alt="logo" width="400"></p>
+
+
 ## За 30 секунд
 
 **Что это:** Quantum Readiness: сканер криптографии на stdlib, 0 зависимостей. Показывает, где RSA/ECDSA — и что менять на PQC.
