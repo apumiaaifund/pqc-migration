@@ -1,26 +1,40 @@
-![PROVEN](https://img.shields.io/badge/PROVEN-29%20passed-brightgreen)
-
-
 <p align="center"><img src="assets/logo.svg" alt="logo" width="400"></p>
 
-<p align="center">
-  <img src="docs/logo.png" alt="pqc-migration-demo" width="200"/>
-</p>
+![PROVEN](https://img.shields.io/badge/PROVEN-29%20passed-brightgreen)
 
-<h1 align="center">pqc-migration-demo</h1>
+# PQC Migration
 
-<p align="center">
-  <b>Public demo / archive: APUM AI Fund — воспроизводимая финансовая аналитика</b><br/>
-  APUM AI Fund — воспроизводимая финансовая аналитика
-</p>
+**Quantum Readiness: сканер криптографии на stdlib, 0 зависимостей.**
 
-## О продукте
-Архивный демо-проект APUM AI Fund. См. основные флагманские продукты в профиле организации.
+---
 
-## Выгоды
-Изучение истории разработки и эволюции архитектуры APUMIA.
+## За 30 секунд
 
+**Что это:** Сканер криптографии на stdlib, 0 зависимостей. Показывает, где RSA/ECDSA — и что менять на PQC.
 
-## Связанные продукты
-Этот репозиторий является частью экосистемы [APUM AI Fund](https://github.com/apumiaaifund).
-Флагманский продукт: [apumia_credit](https://github.com/apumiaaifund/apumia_credit) (PROVEN 8/8).
+**Кому:** Госсектор, банки, критическая инфраструктура — подготовка к NIST PQC.
+
+**Почему сейчас:** NIST PQC стандарты приняты. Банки должны знать, где RSA/ECDSA — и планировать миграцию.
+
+**Что доказано:** 29 passed. apumia prove → PROVEN.
+
+**Чего не доказано (честно):** Не заменяет полноценный аудит — только поверхностный scan.
+
+---
+
+## Оффер
+
+По запросу.
+
+**Следующий шаг:** Покажу scan на реальном репо — 15 минут.
+
+---
+
+## GitHub
+
+- **Private code:** apumiaaifund/pqc-migration
+- **Public demo:** apumiaaifund/pqc-migration-demo
+
+## License
+
+MIT
