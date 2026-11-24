@@ -13,4 +13,4 @@
 
 ## Get the Commercial PQC & ML-DSA-65 Audit Kit ($199)
 Includes the zero-dependency PQC scanner (`pqc_readiness_scanner.py`), reference SARIF/CBOM schemas, CI/CD workflow, and commercial license.
-Contact **apumiaaifund@gmail.com** or visit **https://github.io**.
+Get instant access via Stripe, Apple Pay, or PayPal: **[Buy PQC Migration & ML-DSA-65 Audit Kit ($199) ↗](https://app.lava.top/products/852d8dc0-97bd-4502-9a72-b5a63b1e44b9)**
